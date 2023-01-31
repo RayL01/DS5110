@@ -21,20 +21,6 @@ used by each question below.
 Each question can be answered with one call to seaborn (except for the the last question, which can involve 2 calls).
 Each question should be answered with one file.
 
-## Question 1
-
-Visualize the evolution of APR distributions over time. Comment on the major finding(s).
-
-## Question 2
-
-Create a single visualization that compares APRs of men’s and women’s sports. Comment on the major finding(s).
-
-# Question 3
-
-Compare APRs for individual sports, with one visualization for Men's and another for Women's.
-Comment on the major finding(s).
- 
-
 ## Document for reproducibility
 you should open your VSCode and click on : 'File' -> 'Open Folder' -> Select the target folder -> run the main.py on VSCode
 ## Reproducible results
