@@ -12,7 +12,7 @@ def generate_boxplot_male(data,x,y,hue):
     plt.xlabel("Year",fontsize=30)
     plt.ylabel("APR",fontsize=30)
     plt.legend(prop={'size': 40})
-    plt.savefig("boxplot_Questino3_male.png")
+    plt.savefig("figs/boxplot_Questino3_male.png")
     plt.close()
     
 def generate_boxplot_female(data,x,y,hue):
@@ -24,5 +24,5 @@ def generate_boxplot_female(data,x,y,hue):
     plt.xlabel("Year",fontsize=30)
     plt.ylabel("APR",fontsize=40)
     plt.legend(prop={'size': 40})
-    plt.savefig("boxplot_Questino3_female.png")
+    plt.savefig("figs/boxplot_Questino3_female.png")
     plt.close()

@@ -5,10 +5,12 @@ import numpy as np
 from Question1 import generate_boxplot,generate_relplot
 from Question2 import generate_lineplot
 from Question3 import generate_boxplot_female, generate_boxplot_male
+from readit import csv
+
 sns.set_theme(style = "white")
 #  Get the "raw" URL from the offical website
 url = "https://ncaaorg.s3.amazonaws.com/research/academics/2020RES_APR2019PubDataShare.csv"
-df = pd.read_csv(url)
+df =csv("data/2020RES_APR2019PubDataShare.csv")
 
 #print the whole csv file from the offical website
 #print(df)
