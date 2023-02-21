@@ -22,11 +22,17 @@ Each question can be answered with one call to seaborn (except for the the last 
 Each question should be answered with one file.
 
 ## Document for reproducibility
+
+Git clone "this repo" to your local file system, and open your terminal, run:
 ```
 make answer
 ```
+
+This command would run the main.py python file including Question1.py, Question.py, Question3.py all together.
+
+And the generated figures would be saved in the 'figs' directory.
 ## Reproducible results
-After run the main.py on VSCode, you can see there are 4 png files in the current folder : Relplot_Question1.png(Visualization for question1),Boxplot_Question1.png(Visualization for question1),Lineplot_Questino2.png(Visualization for question2), boxplot_Questino3_female.png(Visualization for question3), boxplot_Question3_male(Visualization for question3)
+After run the main.py on VSCode, you can see there are 4 png files in the current folder : Relplot_Question1.png(Visualization for question1),Boxplot_Question1.png(Visualization for question1),Boxplotplot_Questino2.png(Visualization for question2), boxplot_Questino3_female.png(Visualization for question3), boxplot_Question3_male(Visualization for question3)
 
 
 ### Question 0 
@@ -39,13 +45,15 @@ As for question 1, I genarated 2 plots to analyze our data(boxlot and relplot)
 <img src = "figs/Boxplot_Question1.png">
 </br>
 
-From the boxplot and relplot that we generated, we can see that the most outliers happenned from 2010 to 2012. This may be attributed to the Changes in the student-athlete population: The student-athlete population may have changed during this time period, for example, the institution may have started recruiting more student-athletes from underprivileged backgrounds or from less academically-prepared high schools. And the APRs from a wide range of institutions have gone up and only a few outliers were generated since 2012. To some extent, Improved compliance with NCAA policies(The NCAA may have increased its enforcement of APR regulations since 2012, which could have led to more teams achieving higher APR scores and fewer outliers on the boxplot) may be the cause of it.
+From the boxplot and relplot that we generated, we can see that the most outliers happenned from 2010 to 2012. This may be attributed to the Changes in the student-athlete population: The student-athlete population may have changed during this time period, for example, the institution may have started recruiting more student-athletes from underprivileged backgrounds or from less academically-prepared high schools. And the APRs from a wide range of institutions have gone up and only a few outliers were generated since 2012. To some extent, Improved compliance with NCAA policies(The NCAA may have increased its enforcement of APR regulations since 2012, which could have led to more teams achieving higher APR scores and fewer outliers on the boxplot) may be the cause of it. Also, we can note that the median of APR is gradually increasing over time. Here is a possible explanation: More resources for academic support: Many schools are providing more resources for academic support for student-athletes, suh as tutoring, study halls, and academic advisors. This increased support could be contributing to higher median APR scores.
 
 ### Question 2
-I used lineplot() to analyze question 2, which seems more straightforward.
-<img src = "figs/Lineplot_Questino2.png">
+I used boxplot() to analyze question 2, which seems more straightforward.
+<img src = "figs/Boxplot_Questino2.png">
 
-From the lineplot, we can safely reach the conclusion that APRs of Females' sports are always higher than those of Males. This might be due to that Female student-athletes may have a stronger focus on academics and a greater commitment to academic success. And also APRs of all genders are gradually. From my point of view, One possible reason for the gradual increase in APRs in NCAA sports of all genders from 2004 to 2019 could be the increased emphasis and focus on academic performance and accountability within college sports programs. The NCAA introduced the APR in 2004 as a way to measure the academic progress and success of student-athletes, and since then, many schools and programs have implemented stricter academic policies and initiatives to improve their APR scores. Additionally, the NCAA has implemented penalties for teams with low APR scores, which may have also motivated schools to prioritize academics more. Another possible reason could be the increased focus on student-athlete welfare and well-being, which includes academic success as a key component
+From the boxplot, we can safely reach the conclusion that APRs of all genders are gradually increasing. From my point of view, One possible reason for the gradual increase in APRs in NCAA sports of all genders from 2004 to 2019 could be the increased emphasis and focus on academic performance and accountability within college sports programs. The NCAA introduced the APR in 2004 as a way to measure the academic progress and success of student-athletes, and since then, many schools and programs have implemented stricter academic policies and initiatives to improve their APR scores. Additionally, the NCAA has implemented penalties for teams with low APR scores, which may have also motivated schools to prioritize academics more. Another possible reason could be the increased focus on student-athlete welfare and well-being, which includes academic success as a key component.
+
+In addition, the median of famale's APRs is always higher than that of Male's, which indicate the differences in sport distribution: The distribution of sports between male and female student-athletes is not equal, and some sports may be more academically demanding than others. For example, female student-athletes may be more likely to participate in sports that have a greater emphasis on academic performance, such as gymnastics, while male student-athletes may be more likely to participate in sports that are more physically demanding, such as football or basketball.
 
 
 ### Question3
